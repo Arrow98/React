@@ -81,9 +81,6 @@ th, td {
     text-align: left;
 }
 
-thead {
-    
-}
 
 tbody tr {
     background-color: #f9f9f9;
@@ -93,6 +90,7 @@ tbody tr:hover {
     background-color: #e9e9e9;
 }
 
-tbody tr td:last-child {
+input {
     text-align: center;
+   margin: 20px;
 }

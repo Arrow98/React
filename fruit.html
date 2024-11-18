@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body >
+    <table id="table">
+        <thead>
+            <tr>
+                <th>Fruit</th>
+                <th>Quantity</th>
+                <th>Checked</th>
+            </tr>
+        </thead>
+
+    </table>
+    
+</body>
+<script>
+    const data = [
+        { name: "mango", qty: 3, bought: false},
+        { name: "pawpaw", qty: 5, bought: true}, 
+        { name: "avocado", qty: 1, bought: false}
+    ]
+    
+    const table = document.getElementById("table")
+
+    const tableBody = document.createElement("tbody")
+
+    function createTableRow (fruit){
+        const row =  document.createElement("tr")
+       const tableDetail = document.createElement("td")
+       const quantity = document.createElement("td")
+       const checkBox = document.createElement("input")
+       checkBox.type = "checkbox"
+       checkBox.addEventListener('click', (e) => {
+            const isChecked = e.target.checked 
+            fruit.bought = isChecked 
+            
+
+       } )
+       tableDetail.textContent = `${fruit.name}`
+       quantity.textContent =  `${fruit.qty}`
+       checkBox.checked = fruit.bought
+       row.appendChild(tableDetail)
+       row.appendChild(quantity)
+       row.appendChild(checkBox)
+
+       return row
+    }
+    
+   function createTable(data, tableBody){
+        tableBody.innerHTML = ""
+        data.forEach(input=>{
+            const row = createTableRow(input)
+            tableBody.appendChild(row)
+            table.appendChild(tableBody)
+        })
+   }
+
+   
+    createTable(data, tableBody)
+
+
+
+
+
+   
+
+</script>
+</html>
