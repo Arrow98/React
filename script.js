@@ -188,7 +188,7 @@ function fillTable (taskList){
 
                const savedDetails = {
                 "progressBar": progressBar.style.width,
-                "progrssText":  progressText.textContent,
+                "progressText":  progressText.textContent,
                 taskList
                }
                 
