@@ -23,6 +23,24 @@ h1, h2 {
 h2{
     margin-top: 50px;
 }
+.header{
+    display: flex;
+}
+.reset-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 80px;
+    margin-left: 547px;
+    margin-top: 25px;
+    border-radius: 10px;
+    background-color: #28a745;
+    color: white;
+}
+.reset-button:hover{
+    cursor: pointer;
+}
 .progress-box{
     display:  flex;
     width: 100%;
@@ -47,7 +65,7 @@ h2{
     height: 20px;
 }
 
-#progressBar {
+#progress-Bar {
     width: 0%;
     height: 100%;
     background-color: #28a745;
@@ -55,7 +73,7 @@ h2{
     transition: width 0.3s ease;
 }
 
-#progressText {
+#progress-Text {
     text-align: center;
     font-weight: bold;
     color: #333;

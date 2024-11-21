@@ -143,8 +143,9 @@ let taskList  = [
 ]
 const table = document.getElementById("table")
 const tableBody = document.createElement("tbody")
-const progressBar = document.getElementById("progressBar") 
-const progressText = document.getElementById("progressText")    
+const progressBar = document.getElementById("progress-Bar") 
+const progressText = document.getElementById("progress-Text")  
+const resetButton = document.getElementById("resetButton")  
  
 
 const  mainTable = JSON.parse(localStorage.getItem("objTable")) 
@@ -153,9 +154,6 @@ if(mainTable !== null){
   taskList = mainTable.taskList 
   progressBar.style.width = mainTable.progressBar
   progressText.textContent = mainTable.progressText
-
-  console.log(progressText.textContent)
-
  
 }
 
@@ -220,22 +218,25 @@ function fillTable (taskList){
 fillTable(taskList)
 
 
+resetButton.addEventListener('click',(e)=>{
+    location.reload()
+    localStorage.clear()
+})
+
 
 
 
 function updateProgress() {
     const checkBox = document.querySelectorAll(".checkbox")
-    const ArrCheckBox = [...checkBox]
-    const checked = ArrCheckBox.filter(ticked =>ticked.checked === true).length
-    console.log(checked)
+    const arrCheckBox = [...checkBox]
+    const checked = arrCheckBox.filter(ticked =>ticked.checked === true).length
     const taskLength = 64
     const progressPercentage = taskLength > 0 ? (checked / taskLength) * 100 : 0
-    console.log(progressPercentage)
+   
     
 
     progressBar.style.width = `${progressPercentage}%`
     progressText.textContent = `${Math.round(progressPercentage)}% Complete`
 
-     console.log(progressText)
 
 }
