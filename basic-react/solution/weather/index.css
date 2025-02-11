@@ -1,0 +1,85 @@
+body {
+  background-image: url(sky.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.main-page {
+  width: 100%;
+  height: 860px;
+  display: flex;
+  flex-direction: column;
+}
+.main-display {
+  display: flex;
+  width: 60%;
+  height: 550px;
+  margin: 0px auto;
+  border-radius: 25px;
+  box-shadow: 0px 0px 10px rgb(94, 94, 94);
+}
+.main-display > div {
+  width: 50%;
+}
+.input-box {
+  background-color: white;
+  width: 35%;
+  margin: 50px auto;
+  height: 30px;
+  border-radius: 50px;
+}
+.sun-image-box {
+  height: 100%;
+}
+.input {
+  margin: 5px 15px;
+  border: none;
+  outline: none;
+}
+.wheather-details-section {
+  padding-top: 80px;
+}
+.sun-image {
+  width: 300px;
+  margin-left: 110px;
+  margin-top: 100px;
+}
+h1 {
+  font-size: 50px;
+}
+p {
+  font-size: 25px;
+}
+.box {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  top: 600px;
+  left: 480px;
+}
+.mini-box {
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  height: 170px;
+  border-radius: 50px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 10px rgb(94, 94, 94);
+  padding-top: 10px;
+}
+.mini-box-header {
+  font-weight: bolder;
+  margin: 20px 0px;
+  font-size: 20px;
+}
+.box-image {
+  width: 70px;
+}
+.box-image2 {
+  width: 130px;
+}
+.mini-box-paragrapgh {
+  font-weight: bold;
+}
