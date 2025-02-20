@@ -11,65 +11,74 @@ function Header() {
     </div>
   );
 }
-
+function SideBar() {
+  return (
+    <div className="side-bar">
+      <div className="side-bar-title">Online Users</div>
+      <div className="online-list">
+        <div>
+          <div className="online-name">gaurav</div>
+          <div className="dot"></div>
+        </div>
+        <div>
+          <div className="online-name">ayush</div>
+          <div className="dot"></div>
+        </div>
+        <div>
+          <div className="online-name">divyansh</div>
+          <div className="dot"></div>
+        </div>
+        <div>
+          <div className="online-name">harsh</div>
+          <div className="dot"></div>
+        </div>
+        <div>
+          <div className="online-name">dinesh</div>
+          <div className="dot"></div>
+        </div>
+        <div>
+          <div className="online-name">chirag</div>
+          <div className="dot"></div>
+        </div>
+      </div>
+    </div>
+  );
+}
+function ChatRegion() {
+  return (
+    <div className="chat-region">
+      <div className="sender-message-box">
+        <div className="sender-message">
+          chirag, welcome to the room college friends
+        </div>
+        <div className="sender-identity">admin</div>
+      </div>
+      <div className="sender-message-box">
+        <div className="sender-message">Hey</div>
+        <div className="sender-identity">gaurav</div>
+      </div>
+      <div className="sender-message-box">
+        <div className="sender-message">Hii</div>
+        <div className="sender-identity">atush</div>
+      </div>
+      <div className="sender-message-box">
+        <div className="sender-message">Hello, What's up ?</div>
+        <div className="sender-identity">divyansh</div>
+      </div>
+      <div className="receiver-message-box">
+        <div className="receiver-identity">chirag</div>
+        <div className="receiver-message">
+          Hi Everyone, all good and what about you all ?
+        </div>
+      </div>
+    </div>
+  );
+}
 function ChatSection() {
   return (
     <div className="chat-box">
-      <div className="side-bar">
-        <div className="side-bar-title">Online Users</div>
-        <div className="online-list">
-          <div>
-            <div className="online-name">gaurav</div>
-            <div className="dot"></div>
-          </div>
-          <div>
-            <div className="online-name">ayush</div>
-            <div className="dot"></div>
-          </div>
-          <div>
-            <div className="online-name">divyansh</div>
-            <div className="dot"></div>
-          </div>
-          <div>
-            <div className="online-name">harsh</div>
-            <div className="dot"></div>
-          </div>
-          <div>
-            <div className="online-name">dinesh</div>
-            <div className="dot"></div>
-          </div>
-          <div>
-            <div className="online-name">chirag</div>
-            <div className="dot"></div>
-          </div>
-        </div>
-      </div>
-      <div className="chat-region">
-        <div className="sender-message-box">
-          <div className="sender-message">
-            chirag, welcome to the room college friends
-          </div>
-          <div className="sender-identity">admin</div>
-        </div>
-        <div className="sender-message-box">
-          <div className="sender-message">Hey</div>
-          <div className="sender-identity">gaurav</div>
-        </div>
-        <div className="sender-message-box">
-          <div className="sender-message">Hii</div>
-          <div className="sender-identity">atush</div>
-        </div>
-        <div className="sender-message-box">
-          <div className="sender-message">Hello, What's up ?</div>
-          <div className="sender-identity">divyansh</div>
-        </div>
-        <div className="receiver-message-box">
-          <div className="receiver-identity">chirag</div>
-          <div className="receiver-message">
-            Hi Everyone, all good and what about you all ?
-          </div>
-        </div>
-      </div>
+      <SideBar />
+      <ChatRegion />
     </div>
   );
 }
