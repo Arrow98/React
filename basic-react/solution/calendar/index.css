@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+  font-family: arial;
+}
+.header {
+  display: flex;
+  margin: 0pc auto;
+  width: 90%;
+  height: 100px;
+  justify-content: space-between;
+}
+.header > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 20%;
+  height: 100%;
+}
+.this-year {
+  margin-top: 20px;
+  font-size: 25px;
+}
+.season-box {
+  width: 100%;
+  background: rgb(223, 222, 222);
+  height: 25px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  display: flex;
+}
+.season-box > div {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.year {
+  border-radius: 5px;
+  background: rgb(169, 168, 168);
+}
+.week {
+  border-left: 1px solid rgb(169, 168, 168);
+  border-right: 1px solid rgb(169, 168, 168);
+}
+.input {
+  width: 190px;
+  height: 20px;
+  border: 1px solid rgb(212, 212, 212);
+  outline: none;
+  font-size: 12px;
+  border-radius: 5px;
+  padding-left: 10px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+.input::placeholder {
+  font-size: 12px;
+  font-family: arial;
+}
+.switch-box {
+  margin-left: 20px;
+  display: flex;
+  width: 52%;
+  justify-content: end;
+}
+.middle-box {
+  font-size: 11px;
+  box-shadow: 0px 0px 2px;
+  height: 70%;
+  border-radius: 3px;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.right-arrow {
+  box-shadow: 0px 0px 2px;
+  height: 70%;
+  display: flex;
+  width: 15px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+}
+.left-arrow {
+  box-shadow: 0px 0px 2px;
+  height: 70%;
+  display: flex;
+  width: 15px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+}
+.search-box {
+  display: flex;
+  align-items: end;
+}
+
+.calendar-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding-left: 40px;
+  width: 92%;
+  margin: 0px auto;
+}
+
+.month {
+  background-color: white;
+  padding: 10px;
+  border-radius: 8px;
+  width: 330px;
+}
+
+.month-title {
+  color: tomato;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.days-container {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+
+.day {
+  padding: 5px;
+  text-align: center;
+  font-weight: bold;
+  color: black;
+}
+
+.inactive-day {
+  color: rgb(207, 205, 205);
+}
+.day-title {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+.each-day {
+  color: rgb(141, 140, 140);
+}
