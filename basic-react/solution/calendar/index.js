@@ -68,7 +68,6 @@ function Header() {
 }
 
 function Calendar(props) {
-  console.log(props);
   const { months } = props;
   const { days } = props;
 
