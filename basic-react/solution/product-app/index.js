@@ -143,37 +143,47 @@ function Pages() {
     </div>
   );
 }
+function ProfileCageImage1() {
+  return (
+    <div className="shop">
+      <svg
+        viewBox="64 64 896 896"
+        focusable="false"
+        data-icon="shopping"
+        width="30px"
+        height="30px"
+        fill="currentColor"
+        aria-hidden="true"
+      >
+        <path d="M832 312H696v-16c0-101.6-82.4-184-184-184s-184 82.4-184 184v16H192c-17.7 0-32 14.3-32 32v536c0 17.7 14.3 32 32 32h640c17.7 0 32-14.3 32-32V344c0-17.7-14.3-32-32-32zm-432-16c0-61.9 50.1-112 112-112s112 50.1 112 112v16H400v-16zm392 544H232V384h96v88c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-88h224v88c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-88h96v456z"></path>
+      </svg>
+    </div>
+  );
+}
+function ProfileCageImage2() {
+  return (
+    <div className="drop-down">
+      <svg
+        viewBox="64 64 896 896"
+        focusable="false"
+        data-icon="down"
+        width="1em"
+        height="1em"
+        fill="currentColor"
+        aria-hidden="true"
+      >
+        <path d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z"></path>
+      </svg>
+    </div>
+  );
+}
 function ProfileBox() {
   return (
     <div className="profile-box">
-      <div className="shop">
-        <svg
-          viewBox="64 64 896 896"
-          focusable="false"
-          data-icon="shopping"
-          width="30px"
-          height="30px"
-          fill="currentColor"
-          aria-hidden="true"
-        >
-          <path d="M832 312H696v-16c0-101.6-82.4-184-184-184s-184 82.4-184 184v16H192c-17.7 0-32 14.3-32 32v536c0 17.7 14.3 32 32 32h640c17.7 0 32-14.3 32-32V344c0-17.7-14.3-32-32-32zm-432-16c0-61.9 50.1-112 112-112s112 50.1 112 112v16H400v-16zm392 544H232V384h96v88c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-88h224v88c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-88h96v456z"></path>
-        </svg>
-      </div>
+      <ProfileCageImage1 />
       <div className="profile-name">Arrow</div>
       <div className="profile-pic"></div>
-      <div className="drop-down">
-        <svg
-          viewBox="64 64 896 896"
-          focusable="false"
-          data-icon="down"
-          width="1em"
-          height="1em"
-          fill="currentColor"
-          aria-hidden="true"
-        >
-          <path d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z"></path>
-        </svg>
-      </div>
+      <ProfileCageImage2 />
     </div>
   );
 }
