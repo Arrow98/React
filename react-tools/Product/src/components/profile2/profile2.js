@@ -1,7 +1,7 @@
 import React from "react";
 import "./profile2.css";
 
-export function ProfileCageImage2() {
+export function DropDownIcon() {
   return (
     <div className="drop-down">
       <svg

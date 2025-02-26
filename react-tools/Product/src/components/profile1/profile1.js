@@ -1,7 +1,7 @@
 import React from "react";
 import "./profile1.css";
 
-export function ProfileCageImage1() {
+export function ShopIcon() {
   return (
     <div className="shop">
       <svg
