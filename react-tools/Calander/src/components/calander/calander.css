@@ -1,0 +1,47 @@
+.calendar-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding-left: 40px;
+  width: 92%;
+  margin: 0px auto;
+}
+
+.month {
+  background-color: white;
+  padding: 10px;
+  border-radius: 8px;
+  width: 330px;
+}
+
+.month-title {
+  color: tomato;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.days-container {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+
+.day {
+  padding: 5px;
+  text-align: center;
+  font-weight: bold;
+  color: black;
+}
+
+.inactive-day {
+  color: rgb(207, 205, 205);
+}
+.day-title {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+.each-day {
+  color: rgb(141, 140, 140);
+}
