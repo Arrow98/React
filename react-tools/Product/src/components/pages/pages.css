@@ -1,0 +1,14 @@
+.pages {
+  display: flex;
+  width: 25%;
+  justify-content: space-between;
+}
+.pages > div {
+  display: flex;
+  align-items: center;
+  color: rgb(136, 135, 135);
+}
+.active {
+  color: black !important;
+  font-weight: bold;
+}
