@@ -1,4 +1,4 @@
-# Accordion Page
+# Calculator Page
 
 This is a simple React project to help you practice front-end development by **cloning a real-world website**.
 
@@ -36,7 +36,7 @@ Recreate the layout, styles, and responsiveness as closely as possible using **R
 > The first part of this website clone includes creating an **Calculator component**. Follow these rules carefully:
 
 1. **Clone the design exactly** as shown in the reference image.
-2. **The maximum width of the calculator should be 600px and well centered on the page**. On mobiles , they should fill the entire page.
+2. **The maximum width of the calculator should be 600px and well centered on the page**. On mobiles, it should fill the entire page.
 
 ---
 
