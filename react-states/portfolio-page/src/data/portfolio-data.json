@@ -1,0 +1,40 @@
+{
+  "name": "Mary Zelensky",
+  "avatar": "/assets/images/image-001.jpg",
+  "location": {
+    "zone": "Zone 6",
+    "region": "Southwest US"
+  },
+  "about": "Hi there! I'm Mary, a passionate gardener and plant stylist based in the heart of the Southwest. I specialize in helping both new and seasoned plant lovers create thriving green spaces. Whether you're looking to build your dream herb garden or just need a few tips on keeping your succulents happy, I’m here to guide you with love, knowledge, and a touch of dirt-under-the-nails magic.",
+  "portfolio": [
+    "/assets/images/image-002.jpg",
+    "/assets/images/image-003.jpg",
+    "/assets/images/image-004.jpg",
+    "/assets/images/image-005.jpg",
+    "/assets/images/image-006.jpg",
+    "/assets/images/image-007.jpg",
+    "/assets/images/image-008.jpg",
+    "/assets/images/image-009.jpg"
+  ],
+  "expertise": ["Succulents", "Vegetables", "Herbs", "Dry Climates"],
+  "testimonials": [
+    {
+      "quote": "Mary has a true gift. She helped me turn my lifeless patio into a lush, thriving garden. Her advice is clear, kind, and totally spot on!",
+      "name": "Maria",
+      "location": "Client from Arizona"
+    },
+    {
+      "quote": "I booked a quick session thinking I’d just get a few plant tips. I left with confidence and a whole new vision for my backyard. Mary is amazing!",
+      "name": "Jason",
+      "location": "Client from California"
+    }
+  ],
+  "sessions": [
+    {
+      "title": "Seed Plan",
+      "description": "Perfect for the aspiring gardener who needs just a little advice to get started or troubleshoot a specific issue.",
+      "price": 30,
+      "durationMinutes": 15
+    }
+  ]
+}

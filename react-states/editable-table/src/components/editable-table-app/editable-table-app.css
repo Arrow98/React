@@ -1,0 +1,9 @@
+#editable-table-app ul {
+  padding: 0;
+  list-style: none;
+}
+
+#editable-table-app li {
+  padding: 6px 0;
+  border-bottom: 1px solid #ddd;
+}
