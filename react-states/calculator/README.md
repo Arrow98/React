@@ -29,13 +29,6 @@ You're going to **clone this website**:
 
 Recreate the layout, styles, and responsiveness as closely as possible using **React**.
 
-## 🎨 Tools to Help You
-
-### 🎯 Color Picker
-
-Use this to detect any color from the website image or screenshot:  
-👉 [https://imagecolorpicker.com/](https://imagecolorpicker.com/)
-
 ---
 
 ## 📂 Calculator Instructions
@@ -46,6 +39,13 @@ Use this to detect any color from the website image or screenshot:
 2. **The maximum width of the calculator should be 600px and well centered on the page**. On mobiles , they should fill the entire page.
 
 ---
+
+## 🎨 Tools to Help You
+
+### 🎯 Color Picker
+
+Use this to detect any color from the website image or screenshot:  
+👉 [https://imagecolorpicker.com/](https://imagecolorpicker.com/)
 
 ### 🧩 Icons
 
