@@ -36,6 +36,17 @@ Recreate the layout, styles, and responsiveness as closely as possible using **R
 Use this to detect any color from the website image or screenshot:  
 👉 [https://imagecolorpicker.com/](https://imagecolorpicker.com/)
 
+---
+
+## 📂 Calculator Instructions
+
+> The first part of this website clone includes creating an **Calculator component**. Follow these rules carefully:
+
+1. **Clone the design exactly** as shown in the reference image.
+2. **The maximum width of the calculator should be 600px and well centered on the page**. On mobiles , they should fill the entire page.
+
+---
+
 ### 🧩 Icons
 
 Use [**React Icons**](https://react-icons.github.io/react-icons/) for adding icons easily.

@@ -29,6 +29,20 @@ You're going to **clone this website**:
 
 Recreate the layout, styles, and responsiveness as closely as possible using **React**.
 
+---
+
+## 📂 Accordion Component Instructions
+
+> The first part of this website clone includes creating an **Accordion component**. Follow these rules carefully:
+
+1. **Clone the design exactly** as shown in the reference image.
+2. **Only one accordion section should be open at a time**. When a user clicks the **plus button**, the clicked section should expand and the previously open one should close.
+3. **Apply smooth transitions and animations** when showing or hiding content to improve user experience.
+
+👉 Use the provided `accordion-data.json` in `data` folder for your content.
+
+---
+
 ## 🎨 Tools to Help You
 
 ### 🎯 Color Picker
