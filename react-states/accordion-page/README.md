@@ -1,4 +1,4 @@
-# React Website Clone
+# Accordion Page
 
 This is a simple React project to help you practice front-end development by **cloning a real-world website**.
 
@@ -25,8 +25,7 @@ Then open [http://localhost:3000](http://localhost:3000) in your browser to see 
 ## 🧠 Objective
 
 You're going to **clone this website**:  
-![Website to Clone](public/clone.jpg)  
-(Replace this with the actual image link you want to use.)
+![Website to Clone](public/clone.jpg)
 
 Recreate the layout, styles, and responsiveness as closely as possible using **React**.
 

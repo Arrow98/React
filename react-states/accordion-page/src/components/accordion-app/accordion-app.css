@@ -1,0 +1,12 @@
+/* Clear sample styles and start work */
+
+#accordion-app {
+  white-space: pre;
+  font-family: monospace;
+  width: 600px;
+  margin: 20px auto;
+  text-wrap: auto;
+  background-color: rgba(211, 211, 211, 0.275);
+  padding: 20px;
+  border-radius: 10px;
+}

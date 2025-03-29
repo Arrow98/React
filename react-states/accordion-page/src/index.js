@@ -1,13 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import reportWebVitals from "./reportWebVitals";
-import { CalculatorApp } from "./components/calculator-app/calculator-app";
 import "./index.css";
+import { AccordionApp } from "./components/accordion-app/accordion-app";
+import data from "./data/accordion-data.json";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <CalculatorApp />
+    <AccordionApp accordionData={data} />
   </React.StrictMode>
 );
 
