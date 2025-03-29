@@ -1,6 +1,10 @@
+import { useState } from "react";
+import photosData from "./data/photos.json";
 import "./gallery-app.css";
 
-export function GalleryApp({ photos }) {
+export function GalleryApp() {
+  const [photos, setPhotos] = useState(photosData);
+
   /* Remove sample code and start project */
   return (
     <div id="gallery-app">

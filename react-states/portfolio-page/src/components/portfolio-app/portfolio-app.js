@@ -1,6 +1,11 @@
 import "./portfolio-app.css";
 
 export function PortfolioApp({ portfolio }) {
+  /* Remove sample code and start project 
+  
+     NB: No state is needed as there will be no change and modification of data
+  */
+
   return (
     <div id="portfolio-app">
       <h2>{portfolio.name}</h2>
