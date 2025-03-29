@@ -1,0 +1,22 @@
+[
+  {
+    "title": "What is React?",
+    "details": "React is a JavaScript library for building user interfaces. It makes it painless to create interactive UIs by managing state and rendering efficiently."
+  },
+  {
+    "title": "Why use React?",
+    "details": "React allows you to build fast and modular applications using reusable components. It's maintained by Meta and has a strong ecosystem and community support."
+  },
+  {
+    "title": "How do you create a component?",
+    "details": "Components can be created as JavaScript functions or classes that return JSX. Function components are now more common with the introduction of hooks."
+  },
+  {
+    "title": "What are hooks in React?",
+    "details": "Hooks are functions that let you use state and other React features in function components. Examples include useState, useEffect, useContext, etc."
+  },
+  {
+    "title": "How does the virtual DOM work?",
+    "details": "The virtual DOM is a lightweight JavaScript representation of the real DOM. React updates the virtual DOM first, compares it to the previous version, and only updates what's changed in the real DOM."
+  }
+]
