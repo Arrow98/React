@@ -1,12 +1,19 @@
 import { useState } from "react";
 import "./accordion-app.css";
-import data from "./data/accordion-data.json";
+import { AccordionHeader } from "../accordion-header/accordion-header";
+import { AccordionBody } from "../accordion-body/accordion-body";
 
 export function AccordionApp() {
   /* Remove sample code and start project */
 
-  const [accordionData, setAccordionData] = useState(data);
-
-  const sampleData = JSON.stringify(accordionData, null, 4);
-  return <div id="accordion-app">{sampleData}</div>;
+  return (
+    <div className="body">
+      <div className="image-box"></div>
+      <div id="accordion-app">
+        <AccordionHeader />
+        <AccordionBody />
+      </div>
+      ;
+    </div>
+  );
 }
