@@ -4,9 +4,11 @@
   display: flex;
 }
 .star {
-  border: 1px solid black;
   width: 100px;
   height: 100px;
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
 }
 .header-text {
   text-align: center;

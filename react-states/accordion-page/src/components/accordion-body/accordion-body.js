@@ -23,7 +23,11 @@ export function AccordionBody() {
               {index === switchId ? (
                 <FaCircleMinus size={25} />
               ) : (
-                <FaCirclePlus size={25} onClick={() => setSwitchId(index)} />
+                <FaCirclePlus
+                  size={25}
+                  onClick={() => setSwitchId(index)}
+                  color="purple"
+                />
               )}
             </div>
             {index === switchId && (
