@@ -1,0 +1,31 @@
+.accordion-body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 20px;
+}
+.accordion-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-bottom: 1px solid rgb(208, 205, 205);
+  padding-bottom: 20px;
+  margin-top: 20px;
+  height: 30px;
+  transition: height 0.3s ease-in-out;
+  overflow: hidden;
+}
+.accordion-list.expanded {
+  height: 90px;
+}
+
+.accordion-list-title-box {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.accordion-list-title {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
