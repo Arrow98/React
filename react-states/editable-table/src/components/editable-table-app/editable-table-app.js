@@ -1,6 +1,7 @@
 import "./editable-table-app.css";
-import usersData from "./data/table-data.json";
+import usersData from "../../data/table-data.json";
 import { useState } from "react";
+import { EditableTable } from "../table/table";
 
 export function EditableTableApp() {
   const [users, setUsers] = useState(usersData);
@@ -9,13 +10,7 @@ export function EditableTableApp() {
 
   return (
     <div id="editable-table-app">
-      <ul>
-        {users.map((user) => (
-          <li key={user.id}>
-            {user.name} — {user.email} — {user.role} — {user.status}
-          </li>
-        ))}
-      </ul>
+      <EditableTable users={users} />
     </div>
   );
 }
