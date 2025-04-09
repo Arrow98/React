@@ -38,7 +38,7 @@ export function ButtonGrid() {
   }
   return (
     <div>
-      <InputBox initialValue={initialValue} />
+      <InputBox initialValue={initialValue} setInitialValue={setInitialValue} />
       <div className="button-grid">
         {buttons.map((buttonValue, index) => {
           if (buttonValue === "0") {
