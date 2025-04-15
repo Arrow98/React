@@ -2,29 +2,11 @@ import React, { useState } from "react";
 import "./button.css";
 import { InputBox } from "../input/input";
 import { evaluate } from "mathjs";
+import { BUTTONS } from "../../libs/constants";
+import { NUMBERS } from "../../libs/constants";
+import { SYMBOLS } from "../../libs/constants";
 
 export function ButtonGrid() {
-  const buttons = [
-    "AC",
-    "+/-",
-    "%",
-    "/",
-    "7",
-    "8",
-    "9",
-    "*",
-    "4",
-    "5",
-    "6",
-    "−",
-    "1",
-    "2",
-    "3",
-    "+",
-    "0",
-    ".",
-    "=",
-  ];
   const [initialValue, setInitialValue] = useState("");
   function handleClick(InputValue) {
     setInitialValue((previousValue) => previousValue + InputValue);
@@ -40,7 +22,7 @@ export function ButtonGrid() {
     <div>
       <InputBox initialValue={initialValue} setInitialValue={setInitialValue} />
       <div className="button-grid">
-        {buttons.map((buttonValue, index) => {
+        {BUTTONS.map((buttonValue, index) => {
           if (buttonValue === "0") {
             return (
               <button
@@ -51,12 +33,7 @@ export function ButtonGrid() {
                 {buttonValue}
               </button>
             );
-          } else if (
-            buttonValue === "/" ||
-            buttonValue === "*" ||
-            buttonValue === "−" ||
-            buttonValue === "+"
-          ) {
+          } else if (SYMBOLS.includes(buttonValue)) {
             return (
               <button
                 key={index}
@@ -66,18 +43,7 @@ export function ButtonGrid() {
                 {buttonValue}
               </button>
             );
-          } else if (
-            buttonValue === "1" ||
-            buttonValue === "2" ||
-            buttonValue === "3" ||
-            buttonValue === "4" ||
-            buttonValue === "5" ||
-            buttonValue === "6" ||
-            buttonValue === "7" ||
-            buttonValue === "8" ||
-            buttonValue === "9" ||
-            buttonValue === "."
-          ) {
+          } else if (NUMBERS.includes(buttonValue)) {
             return (
               <button
                 key={index}
