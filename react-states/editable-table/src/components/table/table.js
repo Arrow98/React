@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "./table.css";
 import { TableCell } from "../tableCell/tableCell";
+import { STATUS_OPTIONS } from "../../libs/constants";
+import { ROLE_OPTIONS } from "../../libs/constants";
 
 export function EditableTable({ users }) {
   const columns = ["Id", "Name", "Email", "Role", "Status"];
@@ -59,7 +61,7 @@ export function EditableTable({ users }) {
                 cellValue={role}
                 columnName="role"
                 rowIndex={rowIndex}
-                options={["Admin", "Editor", "Viewer"]}
+                options={ROLE_OPTIONS}
                 setTargetCell={setTargetCell}
                 setUpdatedUsers={handleChange}
               />
@@ -68,7 +70,7 @@ export function EditableTable({ users }) {
                 cellValue={status}
                 columnName="status"
                 rowIndex={rowIndex}
-                options={["Active", "Inactive", "Pending", "Suspended"]}
+                options={STATUS_OPTIONS}
                 setTargetCell={setTargetCell}
                 setUpdatedUsers={handleChange}
               />
