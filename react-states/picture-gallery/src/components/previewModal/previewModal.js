@@ -4,6 +4,7 @@ import { ImCancelCircle } from "react-icons/im";
 
 export function PreviewModal({ previewPhoto, setShowPreviewModal }) {
   const { src, name, caption, tags } = previewPhoto;
+  console.log(tags);
 
   function handlePreviewCancel() {
     setShowPreviewModal(false);
@@ -33,7 +34,7 @@ export function PreviewModal({ previewPhoto, setShowPreviewModal }) {
             <b>Description</b> : {caption}
           </div>
           <div>
-            <b>Tags</b> : {tags}
+            <b>Tags</b> : {tags.join(", ")}
           </div>
           <a href={src} download={name || "image.jpg"} className="link">
             <button className="download" onClick={handleDownload}>
