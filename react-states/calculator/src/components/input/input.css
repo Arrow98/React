@@ -1,0 +1,18 @@
+.input-box {
+  width: 90%;
+  height: 50px;
+  background-color: black;
+  margin: 40px auto;
+}
+input {
+  width: 93%;
+  font-size: 24px;
+  padding: 15px;
+  margin-bottom: 20px;
+  text-align: right;
+  border: none;
+  outline: none;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+}
