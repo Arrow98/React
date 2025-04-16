@@ -4,7 +4,6 @@ import { ImCancelCircle } from "react-icons/im";
 
 export function PreviewModal({ previewPhoto, setShowPreviewModal }) {
   const { src, name, caption, tags } = previewPhoto;
-  console.log(tags);
 
   function handlePreviewCancel() {
     setShowPreviewModal(false);
