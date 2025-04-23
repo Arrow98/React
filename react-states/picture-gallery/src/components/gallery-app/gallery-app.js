@@ -12,6 +12,8 @@ export function GalleryApp() {
   const [index, setIndex] = useState(null);
   const [previewPhoto, setPreviewPhoto] = useState("");
   const [showPreviewModal, setShowPreviewModal] = useState(false);
+  const [isList, setIsList] = useState(false);
+  const [isGrid, setIsGrid] = useState(true);
 
   function handleSelect(index) {
     setSelectedPhoto(index);
@@ -34,39 +36,72 @@ export function GalleryApp() {
         setShowModal={setShowModal}
         index={index}
         setSelectedPhoto={setSelectedPhoto}
+        isGrid={isGrid}
+        isList={isList}
+        setIsGrid={setIsGrid}
+        setIsList={setIsList}
       />
-      <div id="gallery-app">
-        {photos.map((photo, index) => {
-          const { src, name } = photo;
-          const getIndex = index;
+      {isGrid && (
+        <div id="gallery-app">
+          {photos.map((photo, index) => {
+            const { src, name, caption } = photo;
+            const getIndex = index;
 
-          return (
-            <div
-              key={index}
-              className="photo-box"
-              onClick={() => handleSelect(index)}
-              onDoubleClick={() => handlePreview(photo)}
-            >
-              <img
-                src={src}
-                alt={name}
+            return (
+              <div
+                key={index}
+                className="photo-box"
+                onClick={() => handleSelect(index)}
+                onDoubleClick={() => handlePreview(photo)}
+              >
+                <img
+                  src={src}
+                  alt={name}
+                  style={
+                    selectedPhoto === getIndex
+                      ? { outline: "3px solid blue" }
+                      : {}
+                  }
+                />
+                <div className="pic-name">{name}</div>
+              </div>
+            );
+          })}
+        </div>
+      )}
+      {isList && (
+        <div id="gallery-app-list">
+          {photos.map((photo, indx) => {
+            const { src, name, caption } = photo;
+            const getIndex = indx;
+            return (
+              <div
+                key={indx}
+                className="photo-list-item"
+                onClick={() => handleSelect(indx)}
+                onDoubleClick={() => handlePreview(photo)}
                 style={
                   selectedPhoto === getIndex
                     ? { outline: "3px solid blue" }
                     : {}
                 }
-              />
-              <div className="pic-name">{name}</div>
-            </div>
-          );
-        })}
-        {showPreviewModal && (
-          <PreviewModal
-            previewPhoto={previewPhoto}
-            setShowPreviewModal={setShowPreviewModal}
-          />
-        )}
-      </div>
+              >
+                <img src={src} alt={name} className="photo-avatar" />
+                <div className="photo-details">
+                  <div className="photo-name">{name}</div>
+                  <div className="photo-caption">{caption}</div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      )}
+      {showPreviewModal && (
+        <PreviewModal
+          previewPhoto={previewPhoto}
+          setShowPreviewModal={setShowPreviewModal}
+        />
+      )}
     </div>
   );
 }

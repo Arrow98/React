@@ -1,7 +1,7 @@
 .grid-switch-box {
   display: flex;
   width: 150px;
-  height: 80%;
+  height: 60%;
   margin-left: 50px;
   background-color: #eeeeee;
   border-radius: 5px;
@@ -11,13 +11,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 30px;
+  margin: auto 5px;
 }
 .grid-switch-box > div :hover {
   cursor: pointer;
 }
 .box-2 {
   background-color: white;
-  height: 50px;
-  margin: auto 5px;
   border-radius: 5px;
 }

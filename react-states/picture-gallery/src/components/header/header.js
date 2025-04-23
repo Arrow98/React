@@ -16,20 +16,34 @@ export function Header({
   setShowModal,
   index,
   setSelectedPhoto,
+  isList,
+  isGrid,
+  setIsList,
+  setIsGrid,
 }) {
   const [imageName, setImageName] = useState("");
   const [urlInput, setUrlInput] = useState(false);
+  const [allowTagsInput, setAllowTagsInput] = useState(false);
   return (
     <div className="header">
-      <InputBox setPhotos={setPhotos} filterPhotos={filterPhotos} />
-      <CheckBox />
+      <InputBox
+        setPhotos={setPhotos}
+        filterPhotos={filterPhotos}
+        allowTagsInput={allowTagsInput}
+      />
+      <CheckBox setAllowTagsInput={setAllowTagsInput} />
       <DeleteBox
         setPhotos={setPhotos}
         photos={photos}
         index={index}
         setSelectedPhoto={setSelectedPhoto}
       />
-      <GridSwitchBox />
+      <GridSwitchBox
+        isGrid={isGrid}
+        isList={isList}
+        setIsGrid={setIsGrid}
+        setIsList={setIsList}
+      />
       <ImportButton
         setShowModal={setShowModal}
         setImageName={setImageName}

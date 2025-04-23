@@ -21,7 +21,7 @@ export function PreviewModal({ previewPhoto, setShowPreviewModal }) {
         <div className="detail-box">
           <div className="cancel">
             <ImCancelCircle
-              size={30}
+              size={23}
               onClick={handlePreviewCancel}
               style={{ cursor: "pointer" }}
             />

@@ -11,9 +11,9 @@ export function ImportButton({ setShowModal, setImageName, setUrlInput }) {
   return (
     <div className="import-button" onClick={handleShowImportModal}>
       <div className="import-icon">
-        <PiNetworkFill size={30} />
+        <PiNetworkFill size={20} />
       </div>
-      <div className="import-text">Import from Unsplash</div>
+      <div className="import-text">Import from Url</div>
     </div>
   );
 }

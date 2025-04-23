@@ -9,7 +9,7 @@ export function DeleteBox({ setPhotos, photos, index, setSelectedPhoto }) {
   }
   return (
     <div className="delete-box" onClick={handleDelete}>
-      <MdDelete size={35} />
+      <MdDelete size={25} />
     </div>
   );
 }

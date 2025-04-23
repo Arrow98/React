@@ -2,7 +2,7 @@ import React from "react";
 import "./input.css";
 import { IoSearchSharp } from "react-icons/io5";
 
-export function InputBox({ setPhotos, filterPhotos }) {
+export function InputBox({ setPhotos, filterPhotos, allowTagsInput }) {
   function handleSearch(e) {
     const inputValue = e.target.value;
     const updatedFilteredPhotos =
@@ -14,16 +14,17 @@ export function InputBox({ setPhotos, filterPhotos }) {
               photo.caption
                 .toLowerCase()
                 .includes(e.target.value.toLowerCase()) ||
-              photo.tags.some(
-                (tag) => tag.toLowerCase() === e.target.value.toLowerCase()
-              )
+              (allowTagsInput &&
+                photo.tags.some(
+                  (tag) => tag.toLowerCase() === e.target.value.toLowerCase()
+                ))
           );
     setPhotos(updatedFilteredPhotos);
   }
   return (
     <div className="input-box">
       <div className="search-icon">
-        <IoSearchSharp size={35} />
+        <IoSearchSharp size={20} />
       </div>
       <input
         type="text"
