@@ -1,0 +1,19 @@
+.aboutme-box {
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+  background-color: white;
+  margin-top: 2px;
+  border-bottom-left-radius: 10px;
+}
+.aboutme-name {
+  width: 160px;
+  color: #48a860;
+  margin-bottom: 13px;
+  margin-top: 15px;
+}
+.aboutme-info {
+  font-size: 13px;
+  width: 220px;
+  height: 207px;
+}

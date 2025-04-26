@@ -17,18 +17,12 @@
     "/assets/images/image-009.jpg"
   ],
   "expertise": ["Succulents", "Vegetables", "Herbs", "Dry Climates"],
-  "testimonials": [
-    {
-      "quote": "Mary has a true gift. She helped me turn my lifeless patio into a lush, thriving garden. Her advice is clear, kind, and totally spot on!",
-      "name": "Maria",
-      "location": "Client from Arizona"
-    },
-    {
-      "quote": "I booked a quick session thinking I’d just get a few plant tips. I left with confidence and a whole new vision for my backyard. Mary is amazing!",
-      "name": "Jason",
-      "location": "Client from California"
-    }
-  ],
+  "testimonials": {
+    "quote": "Mary has a true gift. She helped me turn my lifeless patio into a lush, thriving garden. Her advice is clear, kind, and totally spot on!",
+    "name": "Maria",
+    "location": "Client from Arizona"
+  },
+
   "sessions": [
     {
       "title": "Seed Plan",
