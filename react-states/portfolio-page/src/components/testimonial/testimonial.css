@@ -1,0 +1,31 @@
+.testimonial-box {
+  width: 100%;
+  height: 170px;
+  background-color: white;
+  margin-top: 2px;
+  padding-top: 20px;
+}
+.testimonial-header {
+  color: #48a860;
+  margin-left: 30px;
+}
+.testimonial-info {
+  width: 90%;
+  margin-top: 20px;
+  margin-left: 30px;
+  font-size: 13px;
+}
+.testimonial-footer {
+  width: 90%;
+  display: flex;
+  margin-top: 40px;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-profile {
+  margin-left: 30px;
+  font-size: 13px;
+}
+.dot-switch {
+  display: flex;
+}

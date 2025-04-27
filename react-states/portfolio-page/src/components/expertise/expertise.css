@@ -1,0 +1,31 @@
+.expertise-box {
+  width: 100%;
+  height: 134px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  margin-top: 2px;
+  border-bottom-right-radius: 10px;
+}
+.expertise-header {
+  color: #48a860;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+.plant-box {
+  display: flex;
+  width: 90%;
+  margin-left: 30px;
+  justify-content: space-between;
+}
+.plant-box > div {
+  width: 100px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  background-color: pink;
+  margin-top: 30px;
+  font-size: 13px;
+}
