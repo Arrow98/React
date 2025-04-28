@@ -1,0 +1,23 @@
+.input-box {
+  width: 400px;
+  height: 60%;
+  border: 1px solid rgb(147, 146, 146);
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  border-radius: 10px;
+  background-color: #eeeeee;
+}
+.input {
+  width: 80%;
+  margin-left: 10px;
+  font-size: 13px;
+  border: none;
+  outline: none;
+  background-color: #eeeeee;
+}
+.input::placeholder {
+  color: rgb(12, 12, 12);
+  font-size: 13px;
+  opacity: 1;
+}

@@ -1,0 +1,18 @@
+button {
+  width: 120px;
+  margin-left: 50px;
+  background-color: dodgerblue;
+  color: white;
+  font-size: 13px;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  height: 60%;
+}
+
+button:hover {
+  cursor: pointer;
+}
+.file {
+  display: none;
+}
