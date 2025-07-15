@@ -1,4 +1,5 @@
 import "./portfolio-app.css";
+import { ProfileSection } from "../profileSection/profileSection";
 
 export function PortfolioApp({ portfolio }) {
   /* Remove sample code and start project 
@@ -8,7 +9,8 @@ export function PortfolioApp({ portfolio }) {
 
   return (
     <div id="portfolio-app">
-      <h2>{portfolio.name}</h2>
+      <ProfileSection portfolio={portfolio} />
+      {/* <h2>{portfolio.name}</h2>
       <div>
         {portfolio.portfolio.map((src, i) => (
           <img key={i} src={src} alt="" className="avatar" />
@@ -20,7 +22,7 @@ export function PortfolioApp({ portfolio }) {
             "{t.quote}" - {t.name}
           </li>
         ))}
-      </ul>
+      </ul> */}
     </div>
   );
 }

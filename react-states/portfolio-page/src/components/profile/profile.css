@@ -1,0 +1,43 @@
+.profile-box {
+  height: 290px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+  padding-top: 30px;
+  background-color: white;
+  border-top-left-radius: 10px;
+}
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
+}
+.avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.profile-name {
+  margin-top: 20px;
+  font-size: 25px;
+}
+.location-box {
+  display: flex;
+  flex-direction: column;
+  width: 151px;
+}
+.location-name-box {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.location {
+  margin-right: 10px;
+  color: #48a860;
+  font-size: 13px;
+}
+.location-name {
+  font-size: 13px;
+  margin-top: 5px;
+}

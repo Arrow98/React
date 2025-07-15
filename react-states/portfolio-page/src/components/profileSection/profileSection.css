@@ -1,0 +1,18 @@
+.profile {
+  display: flex;
+}
+.info-box {
+  display: flex;
+  width: 880px;
+}
+.info {
+  width: 35%;
+}
+.gallery {
+  width: 66%;
+  margin-left: 2px;
+}
+.session {
+  width: 343px;
+  margin-left: 30px;
+}
